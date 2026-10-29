@@ -27,7 +27,7 @@ precisava montar um relatório por filial e um por região, calcular ~24 indicad
 (margem, lucro, inadimplência, prazo médio de recebimento…), colorir o que estava bom ou ruim
 e mandar cada arquivo para o gerente certo. Trabalho manual, repetitivo e fácil de errar.
 
-> **Impacto:** o processo ocupava **um dia inteiro de trabalho por mês** de um diretor.
+> **Impacto:** o processo ocupava **um dia inteiro de trabalho por mês** de uma pessoa da gestão.
 > Com o app, gerar todos os relatórios e enviá-los aos gerentes passou a levar **minutos**.
 
 ## O que o app faz
