@@ -1,0 +1,21 @@
+# Roda a suíte a cada push e pull request. Usa um runner Windows porque o app é
+# desktop Windows e os testes de fumaça abrem a janela Tk de verdade.
+name: Testes
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch: {}
+
+jobs:
+  testes:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements*.txt
+      - run: pip install -r requirements-dev.txt
+      - run: python -m pytest -q tests/

@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Build do PyInstaller (gerado por 3_Gerar_Executavel_Opcional.bat)
+build/
+dist/
+*.spec
+
+# Dados locais e sensíveis — nunca sobem pro git (credenciais, cadastros,
+# mapeamentos e relatórios variam por computador/usuário). data/ em si
+# NÃO é ignorada porque guarda data/metas_modelo_exemplo.xlsx (modelo
+# versionado); só a pasta de arquivos internos gerados em tempo de
+# execução (fica ao lado do main.py/.exe, não dentro de data/) e a pasta
+# de relatórios gerados.
+Arquivos do Programa (não mexer)/
+Relatórios/
+output/
+
+# Configuração local do harness (Claude Code), não é parte do projeto
+.claude/
